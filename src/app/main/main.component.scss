@@ -1,0 +1,23 @@
+@import '../../styles';
+
+.main-div {
+  height: 100%;
+  width: 100%;
+}
+
+.splash-page {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: $background-grey;
+
+  &__content {
+    &__logo-container {
+      height: 20%;
+      width: 20%;
+    }
+  }
+}
