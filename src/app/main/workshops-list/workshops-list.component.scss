@@ -1,0 +1,38 @@
+@import  '../../../styles';
+
+.workshops-list {
+  background-color: $background-grey;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  &__calendar-container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__image {
+      width: 30rem;
+      height: 30rem;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  &__events {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__list {
+      color: white;
+    }
+  }
+}

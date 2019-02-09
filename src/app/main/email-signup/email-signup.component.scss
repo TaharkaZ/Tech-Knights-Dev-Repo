@@ -1,0 +1,12 @@
+.email-signup-page {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../../assets/some-art.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content-container {
+    color: black;
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../../styles';
+
+.splash-page {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../../assets/some-art.jpg");
+  justify-content: center;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo-container {
+      height: 5rem;
+      justify-self: center;
+      align-self: center;
+      align-content: center;
+      margin-bottom: 0.5rem;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
