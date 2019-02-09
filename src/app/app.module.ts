@@ -7,6 +7,7 @@ import { MainComponent } from './main/main.component';
 import { SplashPageComponent } from './main/splash-page/splash-page.component';
 import { WorkshopsListComponent } from './main/workshops-list/workshops-list.component';
 import { EmailSignupComponent } from './main/email-signup/email-signup.component';
+import {MatButtonModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EmailSignupComponent } from './main/email-signup/email-signup.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
