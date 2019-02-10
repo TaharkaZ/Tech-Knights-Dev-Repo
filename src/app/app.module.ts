@@ -10,7 +10,8 @@ import { EmailSignupComponent } from './main/email-signup/email-signup.component
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { CalendarModule, DateAdapter } from 'angular-calendar'
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns'
-import { MatButtonModule } from '@angular/material'
+import { MatButtonModule, MatDialogModule } from '@angular/material'
+import { WorkshopDetailsComponent } from './main/workshops-list/workshop-details/workshop-details.component'
 
 
 @NgModule({
@@ -19,12 +20,14 @@ import { MatButtonModule } from '@angular/material'
     MainComponent,
     SplashPageComponent,
     WorkshopsListComponent,
-    EmailSignupComponent
+    EmailSignupComponent,
+    WorkshopDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
+    MatDialogModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CalendarModule.forRoot({
@@ -33,6 +36,9 @@ import { MatButtonModule } from '@angular/material'
     })
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    WorkshopDetailsComponent
+  ]
 })
 export class AppModule { }

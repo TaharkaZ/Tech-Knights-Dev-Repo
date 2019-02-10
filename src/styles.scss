@@ -2,10 +2,12 @@
 @import '../node_modules/angular-calendar/scss/modules/month/calendar-month-view';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+// Theme
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 // Colors
 $background-grey: #404040;
 $subtitle-off-white: #F9F1F1;
-
 
 $font-stack: 'Roboto', sans-serif;
 
@@ -13,4 +15,14 @@ $font-stack: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
   font-family: $font-stack;
+}
+
+// Calendar styling
+
+.cal-month-view .cal-cell-top {
+  min-width: 100px;
+}
+
+.cal-month-view .cal-day-badge {
+  background-color: deeppink;
 }

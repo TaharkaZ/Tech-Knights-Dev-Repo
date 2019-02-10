@@ -3,7 +3,9 @@
     <div class="workshops-list__calendar-container__calendar">
       <mwl-calendar-month-view
         class="workshops-list__calendar"
-        [viewDate]="calendarDate">
+        [viewDate]="viewDate"
+        [events]="events"
+        (dayClicked)="dayClicked($event.day)">
       </mwl-calendar-month-view>
     </div>
   </div>
@@ -17,8 +19,4 @@
       <p>Workshop 5</p>
     </div>
   </div>
-  <!--<mwl-calendar-month-view-->
-    <!--class="workshops-list__calendar"-->
-    <!--[viewDate]="calendarDate">-->
-  <!--</mwl-calendar-month-view>-->
 </div>

@@ -13,10 +13,6 @@
     align-items: center;
     justify-content: center;
     background-color: white;
-
-    &__calendar {
-      background-color: white;
-    }
   }
 
   &__events {
@@ -31,8 +27,4 @@
       color: white;
     }
   }
-}
-
-.cal-month-view .cal-cell-top  {
-  min-width: 100px!important;
 }
