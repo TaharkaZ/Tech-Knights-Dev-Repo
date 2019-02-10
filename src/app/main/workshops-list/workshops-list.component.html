@@ -1,7 +1,10 @@
 <div class="workshops-list">
   <div class="workshops-list__calendar-container">
-    <div class="workshops-list__calendar-container__image">
-      <img src="../../../assets/calendar.jpg" alt="calendar" />
+    <div class="workshops-list__calendar-container__calendar">
+      <mwl-calendar-month-view
+        class="workshops-list__calendar"
+        [viewDate]="calendarDate">
+      </mwl-calendar-month-view>
     </div>
   </div>
   <div class="workshops-list__events">
@@ -14,4 +17,8 @@
       <p>Workshop 5</p>
     </div>
   </div>
+  <!--<mwl-calendar-month-view-->
+    <!--class="workshops-list__calendar"-->
+    <!--[viewDate]="calendarDate">-->
+  <!--</mwl-calendar-month-view>-->
 </div>

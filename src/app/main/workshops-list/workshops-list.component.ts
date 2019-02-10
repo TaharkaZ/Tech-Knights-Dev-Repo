@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'workshops-list',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./workshops-list.component.scss']
 })
 export class WorkshopsListComponent implements OnInit {
+  calendarDate: Date = new Date()
 
   constructor() { }
 
