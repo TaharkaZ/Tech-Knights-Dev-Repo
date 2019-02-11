@@ -10,7 +10,7 @@ import { EmailSignupComponent } from './main/email-signup/email-signup.component
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { CalendarModule, DateAdapter } from 'angular-calendar'
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns'
-import { MatButtonModule, MatDialogModule } from '@angular/material'
+import { MatButtonModule, MatDialogModule, MatInputModule } from '@angular/material'
 import { WorkshopDetailsComponent } from './main/workshops-list/workshop-details/workshop-details.component'
 
 
@@ -28,6 +28,7 @@ import { WorkshopDetailsComponent } from './main/workshops-list/workshop-details
     AppRoutingModule,
     MatButtonModule,
     MatDialogModule,
+    MatInputModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CalendarModule.forRoot({

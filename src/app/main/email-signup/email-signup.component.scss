@@ -14,16 +14,45 @@
   justify-content: center;
   align-items: center;
 
-  &__header {
-    color: $subtitle-off-white;
-  }
-
-  &__content-container {
+  &__content {
     color: black;
-  }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 35%;
 
-  .mat-button.mat-primary {
-    background-color: #81368B;
+    &__form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &__field {
+        width: 85%;
+        align-self: flex-start;
+        color: $off-white;
+      }
+
+      &__submit {
+        align-self: center;
+      }
+
+    }
+
+    &__header {
+      color: $off-white;
+      margin-bottom: 1rem;
+    }
+
   }
 }
 
+.mat-button.mat-primary {
+  background-color: #81368B;
+}
+
+.form {
+  width: 100%;
+}
