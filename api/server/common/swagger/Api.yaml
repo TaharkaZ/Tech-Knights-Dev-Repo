@@ -28,44 +28,12 @@ definitions:
         example: no_stress
 
 paths:
-  /examples:
+  /hello:
     get:
       tags:
-        - Examples
-      description: Fetch all examples
+        - Testing
       responses:
-        200:
-          description: Returns all examples
-    post:
-      tags:
-        - Examples
-      description: Create a new example
-      parameters:
-        - name: example
-          in: body
-          description: an example
-          required: true
-          schema: 
-            $ref: "#/definitions/ExampleBody"
-      responses:
-        200:
-          description: Returns all examples
-
-  /examples/{id}:
-    get:
-      tags:
-        - Examples
-      parameters:
-        - name: id
-          in: path
-          required: true
-          description: The id of the example to retrieve
-          type: integer
-      responses:
-        200:
-          description: Return the example with the specified id
-        404:
-          description: Example not found
+        description: Returns the string 'Hello, World!'
 
   /spec:
     get:
