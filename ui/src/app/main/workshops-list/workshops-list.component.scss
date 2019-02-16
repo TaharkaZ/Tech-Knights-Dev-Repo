@@ -14,22 +14,36 @@
     align-items: center;
     justify-content: center;
     background-color: white;
-
-    @include phone {
-      background-color: red;
-    }
   }
 
   &__events {
+    color: $off-white;
     width: 40%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 
+    &__header {
+      margin-top: 1rem;
+    }
 
     &__list {
-      color: white;
+      margin-top: 2rem;
+      width: 90%;
+
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    &__item {
+
     }
   }
 }

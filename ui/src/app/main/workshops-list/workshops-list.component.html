@@ -10,13 +10,12 @@
     </div>
   </div>
   <div class="workshops-list__events">
+    <h1 class="workshops-list__events__header">Previous Workshops</h1>
     <div class="workshops-list__events__list">
-      <h1>Workshops</h1>
-      <p>Workshop 1</p>
-      <p>Workshop 2</p>
-      <p>Workshop 3</p>
-      <p>Workshop 4</p>
-      <p>Workshop 5</p>
+      <div class="workshops-list__events__item" *ngFor="let event of events">
+        <h2>{{ event.title }}</h2>
+        <p>{{ event.description }}</p>
+      </div>
     </div>
   </div>
 </div>
