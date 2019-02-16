@@ -1,4 +1,5 @@
 @import  '../../../styles';
+@import '../../../mixins';
 
 .workshops-list {
   background-color: $background-grey;
@@ -13,6 +14,10 @@
     align-items: center;
     justify-content: center;
     background-color: white;
+
+    @include phone {
+      background-color: red;
+    }
   }
 
   &__events {
