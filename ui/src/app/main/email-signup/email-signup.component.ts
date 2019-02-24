@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { SocialLinksComponent } from '../social-links/social-links.component'
 
 @Component({
   selector: 'email-signup',
