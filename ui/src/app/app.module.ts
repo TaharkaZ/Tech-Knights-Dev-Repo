@@ -11,7 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { CalendarModule, DateAdapter } from 'angular-calendar'
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns'
 import { MatButtonModule, MatDialogModule, MatInputModule } from '@angular/material'
-import { WorkshopDetailsComponent } from './main/workshops-list/workshop-details/workshop-details.component'
+import { WorkshopDetailsComponent } from './main/workshops-list/workshop-details/workshop-details.component';
+import { SocialLinksComponent } from './main/social-links/social-links.component'
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { WorkshopDetailsComponent } from './main/workshops-list/workshop-details
     SplashPageComponent,
     WorkshopsListComponent,
     EmailSignupComponent,
-    WorkshopDetailsComponent
+    WorkshopDetailsComponent,
+    SocialLinksComponent
   ],
   imports: [
     BrowserModule,
