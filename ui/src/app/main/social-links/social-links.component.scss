@@ -1,10 +1,17 @@
 .social-links {
+	color: white;
 
 	&__content {
 		color: white;
 		cursor: pointer;
-		display: block;
-		padding-right: 15px;
+	}
+
+	div a {
+		color: white;
+	}
+	div i {
+		padding-right: 35px;
+		padding-left: 35px;
 	}
 
 	.fa-github:hover {
