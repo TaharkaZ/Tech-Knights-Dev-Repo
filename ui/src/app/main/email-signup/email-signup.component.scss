@@ -10,7 +10,9 @@
 .email-signup-page {
   height: 100vh;
   width: 100%;
+  position: relative;
   display: flex;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
 
@@ -45,6 +47,11 @@
       color: $off-white;
       margin-bottom: 1rem;
     }
+  }
+
+  &__social-links {
+    position: absolute;
+    bottom: 20px;
   }
 }
 

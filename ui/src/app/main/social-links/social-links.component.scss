@@ -3,15 +3,13 @@
 
 	&__content {
 		color: white;
-		cursor: pointer;
 	}
 
 	div a {
 		color: white;
-	}
-	div i {
 		padding-right: 35px;
 		padding-left: 35px;
+		cursor: pointer;
 	}
 
 	.fa-github:hover {
