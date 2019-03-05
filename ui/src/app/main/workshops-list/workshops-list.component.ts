@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core'
 import { Event } from '../../models/event'
 import { MatDialog } from '@angular/material'
 import { WorkshopDetailsComponent } from './workshop-details/workshop-details.component'
-import { subWeeks } from 'date-fns'
+import { addWeeks, subWeeks } from 'date-fns'
 
 @Component({
   selector: 'workshops-list',
@@ -25,6 +25,26 @@ export class WorkshopsListComponent implements OnInit {
         'Quisque pulvinar orci ex, quis finibus lectus sagittis nec. ' +
         'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; ' +
         'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
+        'Quisque auctor lacinia ante nec ullamcorper. Ut viverra dui quis turpis tincidunt consectetur. ' +
         'Nullam blandit neque eget justo maximus suscipit. Quisque malesuada in sem sit amet lobortis. ' +
         'Donec sit amet arcu ut lacus dignissim aliquet. Sed maximus eleifend hendrerit. ' +
         'Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
@@ -46,8 +66,8 @@ export class WorkshopsListComponent implements OnInit {
         'Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
     },
     {
-      start: subWeeks(new Date(), 2),
-      end: subWeeks(new Date(), 2),
+      start: addWeeks(new Date(), 1),
+      end: addWeeks(new Date(), 1),
       title: 'Webscraping with python and beautifulsoup',
       color: {
         primary: '#1e90ff',

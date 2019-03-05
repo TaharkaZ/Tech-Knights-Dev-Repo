@@ -1,7 +1,14 @@
+$desktop-half-width: 1350px;
 $phone-width: 450px;
 
 @mixin phone {
   @media (max-width: #{$phone-width}) {
     @content;
+  }
+}
+
+@mixin half-desktop {
+  @media (max-width: $desktop-half-width) {
+    @content
   }
 }
